@@ -142,6 +142,16 @@ section.dashboard .container{
     min-width: 200mx;
 }
 
+section.dashboard .container:first-child{
+    background-image: url('assets/HTML5_logo_and_wordmark.svg');
+    background-repeat: none;
+    background-size: cover;
+}
+
 section.dashboard .container > div{
     white-space: nowrap;
+}
+
+img{
+    width: 100%;
 }
