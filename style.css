@@ -1,6 +1,8 @@
 /* Google Fonts - Poppins */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
 
+/* Reset */
+
 * {
   margin: 0;
   padding: 0;
@@ -11,8 +13,10 @@ body {
   min-height: 100%;
   background: #e3f2fd;
 }
+
+/* Sidebar */
+
 nav {
-  position: fixed;
   top: 0;
   left: 0;
   height: 70px;
@@ -48,6 +52,7 @@ nav .sidebar {
   background-color: #fff;
   box-shadow: 0 5px 1px rgba(0, 0, 0, 0.1);
   transition: all 0.4s ease;
+  z-index: 100;
 }
 nav.open .sidebar {
   left: 0;
@@ -102,4 +107,41 @@ nav.open ~ .overlay {
   opacity: 1;
   left: 260px;
   pointer-events: auto;
+}
+
+/*  Container */
+
+section.dashboard {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+section.dashboard .content{
+    display: flex;
+    justify-content: center;
+}
+
+section.dashboard .content{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin-top: 1.5rem; 
+}
+
+section.dashboard .container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: red;
+    padding: 70px;
+    margin: 4rem;
+    border-radius:20px;
+    flex-wrap: nowrap;
+    max-width: 200px;
+    min-width: 200mx;
+}
+
+section.dashboard .container > div{
+    white-space: nowrap;
 }
